@@ -1,0 +1,28 @@
+.homeHeading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutContainer {
+    width: 75%;
+    border: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: auto;
+}
+.aboutMeHeader {
+    text-align: center;
+}
+img {
+    padding-top: 0px;
+    border-radius: 20%;
+    padding-right: 20px;
+}
+.profileImg {
+    display: flex;
+    flex-direction: column;
+}
+/* .profileContext {
+} */
