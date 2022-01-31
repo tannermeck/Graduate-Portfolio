@@ -1,28 +1,53 @@
+.homeContainer {
+    background-color: #BAC1B8;
+    font-family: sans-serif;
+    background-image: url('../../assets/background-profile.png');
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-size: 75%;
+    background-blend-mode: overlay;
+    /* background-blend-mode: screen; */
+}
 .homeHeading {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+.title {
+    margin-top: 0px;
+    font-weight: bolder;
+}
+.location {
+    font-weight: bolder;
+    margin-top: 0px;
+}
 .aboutContainer {
-    width: 75%;
-    border: 2px solid black;
+    width: 85%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
     margin: auto;
+    /* background-color: #BEB7A4; */
+    background-color: white;
+    margin-top: 50px;
 }
 .aboutMeHeader {
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
 }
 img {
-    padding-top: 0px;
-    border-radius: 20%;
+    padding-top: 20px;
+    /* border-radius: 10px; */
     padding-right: 20px;
 }
 .profileImg {
     display: flex;
     flex-direction: column;
 }
-/* .profileContext {
-} */
+.profileContext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+}

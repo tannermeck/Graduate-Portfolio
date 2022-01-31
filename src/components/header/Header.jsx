@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import image from '../../assets/tm.png';
+import image from '../../assets/tm5.png';
 import style from './header.css';
 
 export default function Header(){
     return (
         <section className={style.headerContainer}>
             <div className={style.nameContainer}>
-                <img src={image} alt='tm' height='50'/>
+                <img className={style.headerImg} src={image} alt='tm' height='50'/>
                 <h2>Tanner Meck</h2>
             </div>
             <div className={style.linkContainer}>

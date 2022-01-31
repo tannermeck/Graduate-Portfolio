@@ -12,8 +12,10 @@
     flex-direction: row;
     align-items: center;
 }
-img {
-    padding-right: 10px;
+.headerImg {
+    margin-right: 10px;
+    /* display: flex;
+    justify-content: center; */
 }
 .linkContainer {
     display: flex;
