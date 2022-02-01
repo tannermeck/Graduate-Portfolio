@@ -4,6 +4,7 @@ import Contact from "./views/contact/Contact";
 import Home from "./views/home/Home";
 import Projects from "./views/projects/Projects";
 import style from './app.css';
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Contact />
         </Route>
       </Switch>
+      <Footer />
     </Router>   
   )
 }

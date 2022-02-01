@@ -1,0 +1,21 @@
+.footer {
+    background-color: #BAC1B8;
+    text-align: center;
+    padding: 40px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footerLinks {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footerGithubIcon {
+    padding-right: 5px;
+}
+.footerEmailImage {
+    padding-right: 3px;
+    margin-top: 3px;
+}
