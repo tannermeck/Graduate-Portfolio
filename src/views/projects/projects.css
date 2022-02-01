@@ -1,0 +1,21 @@
+.projectsContainer {
+    height: 100vh;
+    background-color: #BAC1B8;
+    margin-top: 0px;
+}
+.projectName {
+    color: white;
+}
+.carouselDiv {
+    background-color: black;
+    width: 75%;
+    margin: auto;
+    padding: 20px 20px;
+    height: 500px;
+}
+.carouselImg {
+    display: block;
+    height: 400px;
+    /* width: 100vw; */
+    margin: auto;
+}
