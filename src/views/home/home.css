@@ -1,5 +1,6 @@
 .homeContainer {
     background-color: #BAC1B8;
+    width:100vw;
     font-family: sans-serif;
     background-image: url('../../assets/background-profile.png');
     background-repeat: no-repeat;
@@ -62,4 +63,22 @@ img {
     justify-content: center;
     flex-direction: column;
     margin-top: 60px;
+}
+
+
+.techStackParent {
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.techStackContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.techStackSpan {
+    text-align: center;
 }

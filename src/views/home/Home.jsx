@@ -41,9 +41,40 @@ export default function Home(){
                 </p>*/}
                 
             </section>
-            <section>
-                <div>
-                    <NavLink to='/projects'>Projects</NavLink>
+            <section className={style.techStackParent}>
+                <h1>Tech Stack</h1>
+                <div className={style.techStackContainer}>
+                    <span className={style.techStackSpan}>
+                        <h2>Languages</h2>
+                        <p>Javascript</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                    </span>
+                    <span className={style.techStackSpan}>
+                        <h2>{`Libraries & Tools`}</h2>
+                        <p>React</p>
+                        <p>Node</p>
+                        <p>Express</p>
+                        <p>Thunder Client</p>
+                        <p>Postman</p>
+                        <p>Beekeeper</p>
+                        <p>PG Admin</p>
+                    </span>
+                    <span className={style.techStackSpan}>
+                        <h2>{`Databases & Deployment`}</h2>
+                        <p>PostgreSQL</p>
+                        <p>Supabase</p>
+                        <p>Heroku</p>
+                        <p>Netlify</p>
+                        <p>GitHub</p>
+                    </span>
+                    <span className={style.techStackSpan}>
+                        <h2>Testing</h2>
+                        <p>Jest</p>
+                        <p>Q-Unit</p>
+                        <p>Superagent</p>
+                        <p>React Testing Library</p>
+                    </span>
                 </div>
             </section>
         </article>

@@ -3,10 +3,11 @@ import Header from "./components/header/Header";
 import Contact from "./views/contact/Contact";
 import Home from "./views/home/Home";
 import Projects from "./views/projects/Projects";
+import style from './app.css';
 
 export default function App() {
   return (
-    <Router>
+    <Router className={style}>
       <Header />
       <Switch>
         <Route exact path='/'>
