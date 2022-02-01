@@ -9,18 +9,18 @@ export default function Home(){
     return (
         <article className={style.homeContainer}>
             <div className={style.homeHeading}>
-                <h1>Hello, I'm Tanner</h1>
+                <h1 className={style.homeName}>Hello, I'm Tanner</h1>
                 <p className={style.title}>Full-Stack Software Engineer</p>
                 <p className={style.location}>Vancouver, WA</p>
                 <span className={style.links}>
                     <a href='https://github.com/tannermeck'>
-                        <img src={github} alt='github icon' height='50' />
+                        <img src={github} alt='github icon' height='25' />
                     </a>
                     <NavLink to='/contact'>
-                        <img src={email} alt='email' height='40' className={style.emailImage} />
+                        <img src={email} alt='email' height='20' className={style.emailImage} />
                     </NavLink>
                     <a href='https://www.linkedin.com/in/tanner-meck/'>
-                        <img src={linkedIn} alt='linkedIn icon' height='55' className={style.linkedInIcon} />
+                        <img src={linkedIn} alt='linkedIn icon' height='27.5' className={style.linkedInIcon} />
                     </a>
                 </span>
             </div>

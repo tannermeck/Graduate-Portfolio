@@ -14,17 +14,23 @@
     align-items: center;
     flex-direction: column;
 }
+.homeName {
+    padding: 20px;
+}
 .links {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+a img {
+    padding-top: 5px;
+}
 .emailImage {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 .linkedInIcon {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .title {
     margin-top: 0px;
@@ -32,7 +38,7 @@
 }
 .location {
     font-weight: bolder;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 .aboutContainer {
     width: 85%;
@@ -52,7 +58,6 @@
 }
 img {
     padding-top: 20px;
-    /* border-radius: 10px; */
     padding-right: 20px;
 }
 .profileImg {
@@ -66,7 +71,7 @@ img {
     margin-top: 60px;
 }
 
-
+/* Tech Stack Component */
 .techStackParent {
     background-color: white;
     width: 85%;
