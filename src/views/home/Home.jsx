@@ -33,6 +33,7 @@ export default function Home(){
                     <p>
                         As a former Registered Nurse, being a life long learner is my most prestigious skillset. From being introduced to new diagnoses and procedures on a daily basis, to handling deadly viral precautions, learning became a fluid necessity. A few years later, I began my search into becoming a Software Engineer. What I found was exhilarating! It fed my passion for learning, building, assessing, and evaluating, all in a different and creative way. From always thinking on your toes to being comfortable with being uncomfortable, nursing has a direct correlation to my future as a Software Engineer. 
                     </p>
+                    <br />
                     <p>
                         My passion is fueled by my love of error resolution and innermost concern for writing clean-cut code. After graduating in January of 2022, I hope to find work within the front-end of a motivated team of developers and continue to build my skills as a developer. When I'm not coding, I enjoy being a father to my wife and I's 10 month old son, playing with our two golden retrievers, and traveling to new destinations in our travel trailer.
                     </p> 
@@ -42,16 +43,16 @@ export default function Home(){
                 
             </section>
             <section className={style.techStackParent}>
-                <h1>Tech Stack</h1>
+                <h1 className={style.techStackH1}>Tech Stack</h1>
                 <div className={style.techStackContainer}>
                     <span className={style.techStackSpan}>
-                        <h2>Languages</h2>
+                        <h1 className={style.spanH1}>Languages</h1>
                         <p>Javascript</p>
                         <p>HTML</p>
                         <p>CSS</p>
                     </span>
                     <span className={style.techStackSpan}>
-                        <h2>{`Libraries & Tools`}</h2>
+                        <h1 className={style.spanH1}>{`Libraries & Tools`}</h1>
                         <p>React</p>
                         <p>Node</p>
                         <p>Express</p>
@@ -61,7 +62,7 @@ export default function Home(){
                         <p>PG Admin</p>
                     </span>
                     <span className={style.techStackSpan}>
-                        <h2>{`Databases & Deployment`}</h2>
+                        <h1 className={style.spanH1}>{`Databases & Deployment`}</h1>
                         <p>PostgreSQL</p>
                         <p>Supabase</p>
                         <p>Heroku</p>
@@ -69,11 +70,11 @@ export default function Home(){
                         <p>GitHub</p>
                     </span>
                     <span className={style.techStackSpan}>
-                        <h2>Testing</h2>
+                        <h1 className={style.spanH1}>Testing</h1>
+                        <p>React Testing Library</p>
+                        <p>Superagent</p>
                         <p>Jest</p>
                         <p>Q-Unit</p>
-                        <p>Superagent</p>
-                        <p>React Testing Library</p>
                     </span>
                 </div>
             </section>

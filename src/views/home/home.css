@@ -48,6 +48,7 @@
 .aboutMeHeader {
     text-align: left;
     margin-left: 10px;
+    font-size: 1.5rem;
 }
 img {
     padding-top: 20px;
@@ -81,4 +82,14 @@ img {
 }
 .techStackSpan {
     text-align: center;
+}
+.techStackSpan p {
+    padding: 10px;
+}
+.techStackH1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.spanH1 {
+    padding: 10px;
 }
