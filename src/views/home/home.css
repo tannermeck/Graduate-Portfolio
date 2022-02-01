@@ -13,6 +13,18 @@
     align-items: center;
     flex-direction: column;
 }
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.emailImage {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.linkedInIcon {
+    margin-left: 10px;
+}
 .title {
     margin-top: 0px;
     font-weight: bolder;

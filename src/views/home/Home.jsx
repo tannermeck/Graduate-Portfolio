@@ -1,6 +1,9 @@
 import style from './home.css';
 import profilePic from '../../assets/profile2.png';
 import { NavLink } from 'react-router-dom';
+import github from '../../assets/github.png';
+import linkedIn from '../../assets/linked.png';
+import email from '../../assets/email.png';
 
 export default function Home(){
     return (
@@ -9,6 +12,17 @@ export default function Home(){
                 <h1>Hello, I'm Tanner</h1>
                 <p className={style.title}>Full-Stack Software Engineer</p>
                 <p className={style.location}>Vancouver, WA</p>
+                <span className={style.links}>
+                    <a href='https://github.com/tannermeck'>
+                        <img src={github} alt='github icon' height='50' />
+                    </a>
+                    <NavLink to='/contact'>
+                        <img src={email} alt='email' height='40' className={style.emailImage} />
+                    </NavLink>
+                    <a href='https://www.linkedin.com/in/tanner-meck/'>
+                        <img src={linkedIn} alt='linkedIn icon' height='55' className={style.linkedInIcon} />
+                    </a>
+                </span>
             </div>
             <section className={style.aboutContainer}>
                 <div className={style.profileImg}>
