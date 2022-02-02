@@ -15,11 +15,16 @@ import home from '../../assets/spending/home.png';
 import menu from '../../assets/spending/menu.png';
 import chart from '../../assets/spending/chart.png';
 import addRecurring from '../../assets/spending/addRecurring.png';
-// import category from '../../assets/spending/category.png';
 import newPurchase from '../../assets/spending/newPurchase.png';
 import stopRecurring from '../../assets/spending/stopRecurring.png';
 import deletePurchase from '../../assets/spending/delete.png';
 import subcategory from '../../assets/spending/subcategory.png';
+import completed from '../../assets/solarama/completed.png';
+import leaderboard from '../../assets/solarama/leaderboard.png';
+import planets from '../../assets/solarama/planets.png';
+import solarHome from '../../assets/solarama/solarHome.png';
+import trivia from '../../assets/solarama/trivia.png';
+import triviaSubmit from '../../assets/solarama/triviaSubmit.png';
 import Carousel from 'nuka-carousel';
 
 export default function Projects(){
@@ -28,7 +33,7 @@ export default function Projects(){
                 <h1>Tanner's Projects</h1>
                 <div className={style.carouselDiv}>
                     <h3 className={style.projectName}>Alcode-Campgrounds</h3>
-                    <Carousel width='100%' autoplay={true} autoplayInterval={3000} >
+                    <Carousel width='100%' autoplay={true} autoplayInterval={6000} >
                     {/* renderBottomCenterControls={({position: null})} */}
                     {/* need to style bottom controls so they do not cover footer */}
                         <div>
@@ -68,7 +73,7 @@ export default function Projects(){
                 </div>
                 <div className={style.spendingDiv}>
                     <h3>Spending Tracker</h3>
-                    <Carousel autoplay={true} autoplayInterval={3000}>
+                    <Carousel autoplay={true} autoplayInterval={6000}>
                         <img className={style.spendingImg} src={signin} alt="signin" />
                         <img className={style.spendingImg} src={home} alt="home" />
                         <img className={style.spendingImg} src={chart} alt="chart" />
@@ -78,6 +83,17 @@ export default function Projects(){
                         <img className={style.spendingImg} src={addRecurring} alt="addRecurring" />
                         <img className={style.spendingImg} src={stopRecurring} alt="stopRecurring" />
                         <img className={style.spendingImg} src={deletePurchase} alt="deletePurchase" />
+                    </Carousel>
+                </div>
+                <div className={style.solaramaDiv}>
+                    <h3>Solarama</h3>
+                    <Carousel autoplay={true} autoplayInterval={6000}>
+                        <img className={style.solaramaImg} src={solarHome} alt="home page" />
+                        <img className={style.solaramaImg} src={planets} alt="planet links" />
+                        <img className={style.solaramaImg} src={trivia} alt="trivia question" />
+                        <img className={style.solaramaImg} src={triviaSubmit} alt="submit answer" />
+                        <img className={style.solaramaImg} src={completed} alt="completed levels" />
+                        <img className={style.solaramaImg} src={leaderboard} alt="leaderboard" />
                     </Carousel>
                 </div>
             </section>

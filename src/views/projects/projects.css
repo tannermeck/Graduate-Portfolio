@@ -36,13 +36,28 @@
     padding: 20px 20px;
     height: 90vh;
     margin-top: 40px;
-    /* background-image: url('../../assets/spending/home.png');
+}
+.spendingImg {
+    display: block;
+    height: 500px;
+    width: 800px !important;
+    position: relative;
+    margin: auto;
+}
+.solaramaDiv {
+    background-color: black;
+    width: 90%;
+    margin: auto;
+    padding: 20px 20px;
+    height: 90vh;
+    margin-top: 40px;
+    background-image: url('../../assets/solarama/solarHome.png');
     background-repeat: no-repeat;
     background-position-x:center;
     background-size: 100%;
-    background-blend-mode: screen; */
+    background-blend-mode: screen;
 }
-.spendingImg {
+.solaramaImg {
     display: block;
     height: 500px;
     width: 800px !important;
