@@ -65,7 +65,7 @@ export default function Contact(){
                     <input className={style.inputField} type='text' name='from_name' value={toSend.from_name} onChange={handleChange} />
                     <label>Message:</label>
                     <textarea className={style.textarea} name='message' value={toSend.message} onChange={handleChange}/>
-                    <button type='submit'>Send Email</button>
+                    <button className={style.button} type='submit'>Send Email</button>
                 </fieldset>
             </form>
             }

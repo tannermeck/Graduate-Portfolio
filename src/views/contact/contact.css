@@ -31,7 +31,7 @@ legend {
     margin-right: 15px;
     margin-top: 10px;
 }
-button {
+.button {
     width: fit-content;
     margin: auto;
     background-color: #005E7C;
@@ -40,7 +40,7 @@ button {
     border-radius: 5px;
     box-shadow: 2px 2px 5px 2px white;
 }
-button:hover {
+.button:hover {
     background-color: black;
     cursor: pointer;
 }
