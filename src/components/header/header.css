@@ -6,6 +6,7 @@
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Times New Roman', Times, serif, sans-serif;
+    width: 100vw;
 }
 .nameContainer {
     display: flex;
@@ -14,12 +15,12 @@
 }
 .headerImg {
     margin-right: 10px;
-    /* display: flex;
-    justify-content: center; */
+    margin-top:0px;
 }
 .linkContainer {
     display: flex;
     align-items: center;
+    padding-right: 20px;
 }
 .active {
     color: brown;
