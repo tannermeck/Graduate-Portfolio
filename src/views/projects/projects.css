@@ -1,5 +1,5 @@
 .projectsContainer {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: #BAC1B8;
     margin-top: 0px;
@@ -27,4 +27,26 @@
     width: auto;
     position: relative;
     margin: auto;
+}
+
+.spendingDiv{
+    background-color: #FEFAE0;
+    width: 90%;
+    margin: auto;
+    padding: 20px 20px;
+    height: 90vh;
+    margin-top: 40px;
+    /* background-image: url('../../assets/spending/home.png');
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-size: 100%;
+    background-blend-mode: screen; */
+}
+.spendingImg {
+    display: block;
+    height: 500px;
+    width: auto;
+    position: relative;
+    margin: auto;
+    margin-right: 10px;
 }
