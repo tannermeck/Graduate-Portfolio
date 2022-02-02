@@ -1,0 +1,43 @@
+.contactContainer {
+    background-color: #BAC1B8;
+    font-family: sans-serif;
+    height: 100%;
+}
+.emailForm {
+    margin-top: 40px;
+}
+legend {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    height: 550px;
+    background-color: #005E7C;
+}
+.inputField {
+    height: 30px;
+    margin: 20px;
+}
+.textarea {
+    height: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+button {
+    width: fit-content;
+    margin: auto;
+    background-color: #005E7C;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.checkmark {
+    display: block;
+    margin: auto;
+}
