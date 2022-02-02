@@ -45,8 +45,7 @@
 .spendingImg {
     display: block;
     height: 500px;
-    width: auto;
+    width: 800px !important;
     position: relative;
     margin: auto;
-    margin-right: 10px;
 }

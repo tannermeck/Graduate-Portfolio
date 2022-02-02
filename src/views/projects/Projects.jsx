@@ -15,7 +15,7 @@ import home from '../../assets/spending/home.png';
 import menu from '../../assets/spending/menu.png';
 import chart from '../../assets/spending/chart.png';
 import addRecurring from '../../assets/spending/addRecurring.png';
-import category from '../../assets/spending/category.png';
+// import category from '../../assets/spending/category.png';
 import newPurchase from '../../assets/spending/newPurchase.png';
 import stopRecurring from '../../assets/spending/stopRecurring.png';
 import deletePurchase from '../../assets/spending/delete.png';
@@ -73,7 +73,6 @@ export default function Projects(){
                         <img className={style.spendingImg} src={home} alt="home" />
                         <img className={style.spendingImg} src={chart} alt="chart" />
                         <img className={style.spendingImg} src={subcategory} alt="subcategory" />
-                        <img className={style.spendingImg} src={category} alt="category" />
                         <img className={style.spendingImg} src={menu} alt="menu" />
                         <img className={style.spendingImg} src={newPurchase} alt="newPurchase" />
                         <img className={style.spendingImg} src={addRecurring} alt="addRecurring" />
