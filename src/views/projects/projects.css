@@ -44,6 +44,7 @@
     position: relative;
     margin: auto;
 }
+
 .solaramaDiv {
     background-color: black;
     width: 90%;
@@ -63,4 +64,7 @@
     width: 800px !important;
     position: relative;
     margin: auto;
+}
+.solaramaTitle{
+    color: white;
 }

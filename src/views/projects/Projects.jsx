@@ -86,7 +86,7 @@ export default function Projects(){
                     </Carousel>
                 </div>
                 <div className={style.solaramaDiv}>
-                    <h3>Solarama</h3>
+                    <h3 className={style.solaramaTitle}>Solarama</h3>
                     <Carousel autoplay={true} autoplayInterval={6000}>
                         <img className={style.solaramaImg} src={solarHome} alt="home page" />
                         <img className={style.solaramaImg} src={planets} alt="planet links" />
