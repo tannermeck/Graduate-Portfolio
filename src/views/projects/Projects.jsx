@@ -28,74 +28,74 @@ import triviaSubmit from '../../assets/solarama/triviaSubmit.png';
 import Carousel from 'nuka-carousel';
 
 export default function Projects(){
-        return (
-            <section className={style.projectsContainer}>
-                <h1>Tanner's Projects</h1>
-                <div className={style.carouselDiv}>
-                    <h3 className={style.projectName}>Alcode-Campgrounds</h3>
-                    <Carousel width='100%' autoplay={true} autoplayInterval={6000} >
-                    {/* renderBottomCenterControls={({position: null})} */}
-                    {/* need to style bottom controls so they do not cover footer */}
-                        <div>
-                            <img className={style.carouselImg} src={alcodeHome}/>
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={navbar}/>
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={oauth}/>
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={alcodeSelect} />
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={zoom} />
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={zoomIn} />
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={campDetail} />
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={campImage} />
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={favorites} />
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={alcodeMap} />
-                        </div>
-                        <div>
-                            <img className={style.carouselImg} src={alcodeCampground} />
-                        </div>
-                    </Carousel>
-                </div>
-                <div className={style.spendingDiv}>
-                    <h3>Spending Tracker</h3>
-                    <Carousel autoplay={true} autoplayInterval={6000}>
-                        <img className={style.spendingImg} src={signin} alt="signin" />
-                        <img className={style.spendingImg} src={home} alt="home" />
-                        <img className={style.spendingImg} src={chart} alt="chart" />
-                        <img className={style.spendingImg} src={subcategory} alt="subcategory" />
-                        <img className={style.spendingImg} src={menu} alt="menu" />
-                        <img className={style.spendingImg} src={newPurchase} alt="newPurchase" />
-                        <img className={style.spendingImg} src={addRecurring} alt="addRecurring" />
-                        <img className={style.spendingImg} src={stopRecurring} alt="stopRecurring" />
-                        <img className={style.spendingImg} src={deletePurchase} alt="deletePurchase" />
-                    </Carousel>
-                </div>
-                <div className={style.solaramaDiv}>
-                    <h3 className={style.solaramaTitle}>Solarama</h3>
-                    <Carousel autoplay={true} autoplayInterval={6000}>
-                        <img className={style.solaramaImg} src={solarHome} alt="home page" />
-                        <img className={style.solaramaImg} src={planets} alt="planet links" />
-                        <img className={style.solaramaImg} src={trivia} alt="trivia question" />
-                        <img className={style.solaramaImg} src={triviaSubmit} alt="submit answer" />
-                        <img className={style.solaramaImg} src={completed} alt="completed levels" />
-                        <img className={style.solaramaImg} src={leaderboard} alt="leaderboard" />
-                    </Carousel>
-                </div>
-            </section>
-        )
+    return (
+        <section className={style.projectsContainer}>
+            <h1>Tanner's Projects</h1>
+            <div className={style.carouselDiv}>
+                <h3 className={style.projectName}>Alcode-Campgrounds</h3>
+                <Carousel width='100%' autoplay={true} autoplayInterval={6000} >
+                {/* renderBottomCenterControls={({position: null})} */}
+                {/* need to style bottom controls so they do not cover footer */}
+                    <div>
+                        <img className={style.carouselImg} src={alcodeHome}/>
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={navbar}/>
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={oauth}/>
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={alcodeSelect} />
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={zoom} />
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={zoomIn} />
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={campDetail} />
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={campImage} />
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={favorites} />
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={alcodeMap} />
+                    </div>
+                    <div>
+                        <img className={style.carouselImg} src={alcodeCampground} />
+                    </div>
+                </Carousel>
+            </div>
+            <div className={style.spendingDiv}>
+                <h3>Spending Tracker</h3>
+                <Carousel autoplay={true} autoplayInterval={6000}>
+                    <img className={style.spendingImg} src={signin} alt="signin" />
+                    <img className={style.spendingImg} src={home} alt="home" />
+                    <img className={style.spendingImg} src={chart} alt="chart" />
+                    <img className={style.spendingImg} src={subcategory} alt="subcategory" />
+                    <img className={style.spendingImg} src={menu} alt="menu" />
+                    <img className={style.spendingImg} src={newPurchase} alt="newPurchase" />
+                    <img className={style.spendingImg} src={addRecurring} alt="addRecurring" />
+                    <img className={style.spendingImg} src={stopRecurring} alt="stopRecurring" />
+                    <img className={style.spendingImg} src={deletePurchase} alt="deletePurchase" />
+                </Carousel>
+            </div>
+            <div className={style.solaramaDiv}>
+                <h3 className={style.solaramaTitle}>Solarama</h3>
+                <Carousel autoplay={true} autoplayInterval={6000}>
+                    <img className={style.solaramaImg} src={solarHome} alt="home page" />
+                    <img className={style.solaramaImg} src={planets} alt="planet links" />
+                    <img className={style.solaramaImg} src={trivia} alt="trivia question" />
+                    <img className={style.solaramaImg} src={triviaSubmit} alt="submit answer" />
+                    <img className={style.solaramaImg} src={completed} alt="completed levels" />
+                    <img className={style.solaramaImg} src={leaderboard} alt="leaderboard" />
+                </Carousel>
+            </div>
+        </section>
+    )
 }
