@@ -138,6 +138,10 @@
 /* iphone styling */
 
 @media (max-width: 1000px){
+    .projectsContainer {
+        width: 100vw;
+        padding-right: 20px;
+    }
     .carouselDiv {
         height: 50vh;
     }
@@ -161,6 +165,10 @@
     }
 }
 @media (max-width: 500px){
+    .projectsContainer {
+        width: 100vw;
+        padding-right: 20px;
+    }
     .carouselDiv {
         height: 30vh;
     }
