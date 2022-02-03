@@ -40,7 +40,7 @@ export default function Home(){
             <section className={style.aboutContainer}>
                 <div className={style.profileImg}>
                     <h1 className={style.aboutMeHeader}>About Me</h1>
-                    <img src={profilePic} alt='profile picture' height='200'/>
+                    <img className={style.aboutMeProfilePicture} src={profilePic} alt='profile picture' height='200'/>
                 </div>
                 <div className={style.profileContext}>
                     <p>
