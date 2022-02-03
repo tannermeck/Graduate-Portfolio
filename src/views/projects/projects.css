@@ -5,6 +5,11 @@
     margin-top: 0px;
     font-family: sans-serif;
 }
+.title {
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 2em;
+}
 .projectName {
     color: black;
 }
@@ -67,4 +72,65 @@
 }
 .solaramaTitle{
     color: white;
+}
+
+.projectLink {
+    padding: 0px;
+}
+.projectName:hover {
+    color: #005E7C;
+}
+.solaramaTitle:hover {
+    color: #005E7C;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+}
+.githubATag {
+    padding-top: 0px;
+}
+.githubLink {
+    padding: 0px;
+    margin: 0px;
+}
+.github {
+    height: 30px;
+}
+
+/* loader styling */
+.loader {
+    min-height: 100vh;
+    background-color: black;
+    font-family:sans-serif;
+    position: relative;
+    font-size: 10vw;
+    color: #005E7C;
+    -webkit-text-stroke: 0.3vw black;
+    text-transform: uppercase;
+}
+.loader::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #EFE9DE;
+    -webkit-text-stroke: 0.3vw black;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90%
+    {
+        width: 100%;
+    }
 }
