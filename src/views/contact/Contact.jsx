@@ -48,7 +48,7 @@ export default function Contact(){
                 <fieldset className={style.body}>
                     <legend>Email Me Here:</legend>
                     <label>To:</label>
-                    <input className={style.inputField} value='t.meck@students.clark.edu' readOnly/>
+                    <input className={style.inputField} value='tannermeck.coding@gmail.com' readOnly/>
                     <label>Your Email:</label>
                     <input className={style.inputField} type='email' name='reply_to' value={toSend.reply_to} onChange={handleChange}/>
                     <label>Your Name:</label>
