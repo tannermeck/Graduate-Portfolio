@@ -134,3 +134,52 @@
         width: 100%;
     }
 }
+
+/* iphone styling */
+
+@media (max-width: 1000px){
+    .carouselDiv {
+        height: 50vh;
+    }
+    .carouselImg {
+        height: 250px;
+        width: auto;
+    }
+    .spendingDiv{
+        height: 50vh;
+    }
+    .spendingImg {
+        height: 250px;
+        width: 500px !important;
+    }
+    .solaramaDiv {
+        height: 50vh;
+    }
+    .solaramaImg {
+        height: 250px;
+        width: 500px !important;
+    }
+}
+@media (max-width: 500px){
+    .carouselDiv {
+        height: 30vh;
+    }
+    .carouselImg {
+        height: 150px;
+        width: auto;
+    }
+    .spendingDiv{
+        height: 30vh;
+    }
+    .spendingImg {
+        height: 150px;
+        width: 300px !important;
+    }
+    .solaramaDiv {
+        height: 30vh;
+    }
+    .solaramaImg {
+        height: 150px;
+        width: 300px !important;
+    }
+}
