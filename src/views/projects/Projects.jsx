@@ -31,7 +31,7 @@ import github from '../../assets/github.png';
 import whiteGithub from '../../assets/github-white.png';
 
 export default function Projects(){
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(()=> {
         const loader = () => {

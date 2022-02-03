@@ -7,13 +7,13 @@ import email from '../../assets/email.png';
 import { useEffect, useState } from 'react';
 
 export default function Home(){
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(()=> {
         const loader = () => {
             setTimeout(()=> {
                 setLoading(false);
-            }, 5000)
+            }, 3500)
         }
         loader();
     }, []);
@@ -22,7 +22,7 @@ export default function Home(){
     return (
         <article className={style.homeContainer}>
             <div className={style.homeHeading}>
-                <h1 className={style.homeName}>Hello, I'm Tanner</h1>
+                <h1 className={style.homeName}>{`{ Hello, I'm Tanner }`}</h1>
                 <p className={style.title}>Full-Stack Software Engineer</p>
                 <p className={style.location}>Vancouver, WA</p>
                 <span className={style.links}>
