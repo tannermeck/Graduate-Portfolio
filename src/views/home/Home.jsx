@@ -4,8 +4,21 @@ import { NavLink } from 'react-router-dom';
 import github from '../../assets/github.png';
 import linkedIn from '../../assets/linked.png';
 import email from '../../assets/email.png';
+import { useEffect, useState } from 'react';
 
 export default function Home(){
+    const [loading, setLoading] = useState(false);
+
+    useEffect(()=> {
+        const loader = () => {
+            setTimeout(()=> {
+                setLoading(false);
+            }, 5000)
+        }
+        loader();
+    }, []);
+
+    if (loading) return <h1 data-text="{ Tanner }" className={style.loader}>{`{ Tanner }`}</h1>
     return (
         <article className={style.homeContainer}>
             <div className={style.homeHeading}>

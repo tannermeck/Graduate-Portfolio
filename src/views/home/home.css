@@ -98,3 +98,38 @@ img {
 .spanH1 {
     padding: 10px;
 }
+
+/* loader styling */
+.loader {
+    min-height: 100vh;
+    /* background-color: #BAC1B8; */
+    background-color: black;
+    font-family:sans-serif;
+    position: relative;
+    font-size: 10vw;
+    color: #005E7C;
+    -webkit-text-stroke: 0.3vw black;
+    text-transform: uppercase;
+}
+.loader::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #EFE9DE;
+    -webkit-text-stroke: 0.3vw black;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0%, 10%, 100% {
+        width: 0;
+    }
+    70%, 90%
+    {
+        width: 100%;
+    }
+}

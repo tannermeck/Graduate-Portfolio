@@ -29,7 +29,6 @@ export default function Contact(){
                 message: '',
                 reply_to: ''
             });
-            // history.push('/')
         })
         .catch((err) => {
             console.log('FAILED...', err);
@@ -38,21 +37,12 @@ export default function Contact(){
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value })
     }
-    
-    // useEffect(() => {
-    //     const sentDisplay = () => {
-    //         if (sent){
-    //             return <h1>Email Sent!</h1>
-    //         }
-    //     }
-    //     setTimeout(() => {
-    //         sentDisplay()
-    //     }, 3000);
-    // }, [sent])
 
     return (
         <div className={style.contactContainer}>
-            <h1>Setup a time to talk-</h1>
+            <div className={style.titleContainer}>
+                <h1 className={style.title}>{`{ CONNECT }`}</h1>
+            </div>
             {!sent &&
             <form className={style.emailForm} onSubmit={handleSubmit}>
                 <fieldset className={style.body}>
