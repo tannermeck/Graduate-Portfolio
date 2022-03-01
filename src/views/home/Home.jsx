@@ -8,17 +8,27 @@ import { useEffect, useState } from 'react';
 
 export default function Home(){
     const [loading, setLoading] = useState(true);
-
+   
     useEffect(()=> {
         const loader = () => {
             setTimeout(()=> {
                 setLoading(false);
-            }, 3500)
+            }, 5000)
         }
         loader();
     }, []);
 
-    if (loading) return <h1 data-text="{ Tanner }" className={style.loader}>{`{ Tanner }`}</h1>
+    if (loading) return (
+    <section className={style.load}>
+        <h1 className={style.loadh1}>{`{ Tanner Meck }`}</h1>
+        <div className={style.loader}>
+            <div className={style.loaderdiv}>
+            </div>
+            <div className={style.loader2}>
+            </div>
+        </div>
+    </section>
+    )
     return (
         <article className={style.homeContainer}>
             <div className={style.homeHeading}>
