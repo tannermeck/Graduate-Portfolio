@@ -5,7 +5,7 @@ import github from '../../assets/github.png';
 import linkedIn from '../../assets/linked.png';
 import email from '../../assets/email.png';
 import { useEffect, useState } from 'react';
-import Loading from '../../components/loading/Loading';
+import Loading from '../../components/load/Loading';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

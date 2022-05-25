@@ -29,7 +29,7 @@ import Carousel from 'nuka-carousel';
 import { useEffect, useState } from 'react';
 import github from '../../assets/github.png';
 import whiteGithub from '../../assets/github-white.png';
-import Loading from '../../components/loading/Loading';
+import Loading from '../../components/load/Loading';
 
 export default function Projects() {
   const [loading, setLoading] = useState(true);
