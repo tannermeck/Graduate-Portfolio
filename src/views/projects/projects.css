@@ -102,7 +102,7 @@
 }
 
 /* loader styling */
-.loader {
+/* .loader {
   min-height: 100vh;
   background-color: black;
   font-family: sans-serif;
@@ -135,7 +135,7 @@
   90% {
     width: 100%;
   }
-}
+} */
 
 /* iphone styling */
 

@@ -5,6 +5,7 @@ import github from '../../assets/github.png';
 import linkedIn from '../../assets/linked.png';
 import email from '../../assets/email.png';
 import { useEffect, useState } from 'react';
+import Loading from '../../components/load/Loading';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -18,13 +19,7 @@ export default function Home() {
     };
   }, []);
 
-  if (loading)
-    return (
-      <section className={style.load}>
-        <h1 className={style.loadh1}>{`{ Tanner Meck }`}</h1>
-        <div className={style.loading}>Load&nbsp;ng</div>
-      </section>
-    );
+  if (loading) return <Loading />;
   return (
     <article className={style.homeContainer}>
       <div className={style.homeHeading}>
