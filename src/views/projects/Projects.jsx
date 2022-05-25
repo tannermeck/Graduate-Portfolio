@@ -29,6 +29,7 @@ import Carousel from 'nuka-carousel';
 import { useEffect, useState } from 'react';
 import github from '../../assets/github.png';
 import whiteGithub from '../../assets/github-white.png';
+import Loading from '../../components/loading/Loading';
 
 export default function Projects() {
   const [loading, setLoading] = useState(true);
@@ -37,14 +38,15 @@ export default function Projects() {
     const loader = () => {
       setTimeout(() => {
         setLoading(false);
-      }, 5000);
+      }, 2000);
     };
     loader();
   }, []);
 
   if (loading)
     return (
-      <h1 data-text="{ Tanner }" className={style.loader}>{`{ Tanner }`}</h1>
+      // <h1 data-text="{ Tanner }" className={style.loader}>{`{ Tanner }`}</h1>
+      <Loading />
     );
   return (
     <section className={style.projectsContainer}>
