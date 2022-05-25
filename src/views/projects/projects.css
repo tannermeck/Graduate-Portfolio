@@ -1,193 +1,195 @@
 .projectsContainer {
-    height: 100%;
-    width: 100vw;
-    background-color: #BAC1B8;
-    margin-top: 0px;
-    font-family: sans-serif;
+  height: 100%;
+  width: 100vw;
+  background-color: #bac1b8;
+  margin-top: 0px;
+  font-family: sans-serif;
 }
 .title {
-    text-align: center;
-    padding: 20px 20px;
-    font-size: 2em;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 2em;
 }
 .projectName {
-    color: black;
+  color: black;
 }
 .carouselDiv {
-    background-color: black;
-    width: 90%;
-    margin: auto;
-    padding: 20px 20px;
-    height: 90vh;
-    margin-top: 40px;
-    background-image: url('../../assets/alcode/alcode-home.png');
-    background-repeat: no-repeat;
-    background-position-x:center;
-    background-size: 100%;
-    background-blend-mode: screen;
+  background-color: black;
+  width: 90%;
+  margin: auto;
+  padding: 20px 20px;
+  height: 90vh;
+  margin-top: 40px;
+  background-image: url('../../assets/alcode/alcode-home.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+  background-blend-mode: screen;
 }
 .carouselImg {
-    display: block;
-    height: 70vh;
-    width: auto;
-    position: relative;
-    margin: auto;
+  display: block;
+  height: 70vh;
+  width: auto;
+  position: relative;
+  margin: auto;
 }
 
-.spendingDiv{
-    background-color: #FEFAE0;
-    width: 90%;
-    margin: auto;
-    padding: 20px 20px;
-    height: 90vh;
-    margin-top: 40px;
+.spendingDiv {
+  background-color: #fefae0;
+  width: 90%;
+  margin: auto;
+  padding: 20px 20px;
+  height: 90vh;
+  margin-top: 40px;
 }
 .spendingImg {
-    display: block;
-    height: 500px;
-    width: 800px !important;
-    position: relative;
-    margin: auto;
+  display: block;
+  height: 500px;
+  width: 800px !important;
+  position: relative;
+  margin: auto;
 }
 
 .solaramaDiv {
-    background-color: black;
-    width: 90%;
-    margin: auto;
-    padding: 20px 20px;
-    height: 90vh;
-    margin-top: 40px;
-    background-image: url('../../assets/solarama/solarHome.png');
-    background-repeat: no-repeat;
-    background-position-x:center;
-    background-size: 100%;
-    background-blend-mode: screen;
+  background-color: black;
+  width: 90%;
+  margin: auto;
+  padding: 20px 20px;
+  height: 90vh;
+  margin-top: 40px;
+  background-image: url('../../assets/solarama/solarHome.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+  background-blend-mode: screen;
 }
 .solaramaImg {
-    display: block;
-    height: 500px;
-    width: 800px !important;
-    position: relative;
-    margin: auto;
+  display: block;
+  height: 500px;
+  width: 800px !important;
+  position: relative;
+  margin: auto;
 }
-.solaramaTitle{
-    color: white;
+.solaramaTitle {
+  color: white;
 }
 
 .projectLink {
-    padding: 0px;
+  padding: 0px;
 }
 .projectName:hover {
-    color: #005E7C;
+  color: #005e7c;
 }
 .solaramaTitle:hover {
-    color: #005E7C;
+  color: #005e7c;
 }
 
 .linkContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 30px;
 }
 .githubATag {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 .githubLink {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 .github {
-    height: 30px;
+  height: 30px;
 }
 
 /* loader styling */
 .loader {
-    min-height: 100vh;
-    background-color: black;
-    font-family:sans-serif;
-    position: relative;
-    font-size: 10vw;
-    color: #005E7C;
-    -webkit-text-stroke: 0.3vw black;
-    text-transform: uppercase;
+  min-height: 100vh;
+  background-color: black;
+  font-family: sans-serif;
+  position: relative;
+  font-size: 10vw;
+  color: #005e7c;
+  -webkit-text-stroke: 0.3vw black;
+  text-transform: uppercase;
 }
 .loader::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #EFE9DE;
-    -webkit-text-stroke: 0.3vw black;
-    border-right: 2px solid black;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #efe9de;
+  -webkit-text-stroke: 0.3vw black;
+  border-right: 2px solid black;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
 }
 @keyframes animate {
-    0%, 10%, 100% {
-        width: 0;
-    }
-    70%, 90%
-    {
-        width: 100%;
-    }
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 
 /* iphone styling */
 
-@media (max-width: 1000px){
-    .projectsContainer {
-        width: 100vw;
-        padding-right: 20px;
-    }
-    .carouselDiv {
-        height: 50vh;
-    }
-    .carouselImg {
-        height: 250px;
-        width: auto;
-    }
-    .spendingDiv{
-        height: 50vh;
-    }
-    .spendingImg {
-        height: 250px;
-        width: 500px !important;
-    }
-    .solaramaDiv {
-        height: 50vh;
-    }
-    .solaramaImg {
-        height: 250px;
-        width: 500px !important;
-    }
+@media (max-width: 1000px) {
+  .projectsContainer {
+    width: 100vw;
+    padding-right: 20px;
+  }
+  .carouselDiv {
+    height: 50vh;
+  }
+  .carouselImg {
+    height: 250px;
+    width: auto;
+  }
+  .spendingDiv {
+    height: 50vh;
+  }
+  .spendingImg {
+    height: 250px;
+    width: 500px !important;
+  }
+  .solaramaDiv {
+    height: 50vh;
+  }
+  .solaramaImg {
+    height: 250px;
+    width: 500px !important;
+  }
 }
-@media (max-width: 500px){
-    .projectsContainer {
-        width: 100vw;
-        padding-right: 20px;
-    }
-    .carouselDiv {
-        height: 30vh;
-    }
-    .carouselImg {
-        height: 150px;
-        width: auto;
-    }
-    .spendingDiv{
-        height: 30vh;
-    }
-    .spendingImg {
-        height: 150px;
-        width: 300px !important;
-    }
-    .solaramaDiv {
-        height: 30vh;
-    }
-    .solaramaImg {
-        height: 150px;
-        width: 300px !important;
-    }
+@media (max-width: 500px) {
+  .projectsContainer {
+    width: 100vw;
+    padding-right: 20px;
+  }
+  .carouselDiv {
+    height: 30vh;
+  }
+  .carouselImg {
+    height: 150px;
+    width: auto;
+  }
+  .spendingDiv {
+    height: 30vh;
+  }
+  .spendingImg {
+    height: 150px;
+    width: 300px !important;
+  }
+  .solaramaDiv {
+    height: 30vh;
+  }
+  .solaramaImg {
+    height: 150px;
+    width: 300px !important;
+  }
 }

@@ -30,123 +30,184 @@ import { useEffect, useState } from 'react';
 import github from '../../assets/github.png';
 import whiteGithub from '../../assets/github-white.png';
 
-export default function Projects(){
-    const [loading, setLoading] = useState(true);
+export default function Projects() {
+  const [loading, setLoading] = useState(true);
 
-    useEffect(()=> {
-        const loader = () => {
-            setTimeout(()=> {
-                setLoading(false);
-            }, 5000)
-        }
-        loader();
-    }, []);
+  useEffect(() => {
+    const loader = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+    };
+    loader();
+  }, []);
 
-    if (loading) return <h1 data-text="{ Tanner }" className={style.loader}>{`{ Tanner }`}</h1>
+  if (loading)
     return (
-        <section className={style.projectsContainer}>
-            <div className={style.titleContainer}>
-                <h1 className={style.title}>{`{ PROJECTS }`}</h1>
-            </div>
-            <div className={style.carouselDiv}>
-                <section className={style.linkContainer}>
-                    <div>
-                        <a className={style.projectLink} href="https://alcode-campgrounds.netlify.app">
-                            <h3 className={style.projectName}>Alcode-Campgrounds</h3>
-                        </a>
-                    </div>
-                    <div className={style.githubLink}>
-                        <a className={style.githubATag} href="https://github.com/Alcode-Campgrounds">
-                            <img className={style.github} src={github} alt='github link' />
-                        </a>
-                    </div>
-                </section>
-                <Carousel width='100%' autoplay={true} autoplayInterval={6000} >
-                {/* renderBottomCenterControls={({position: null})} */}
-                {/* need to style bottom controls so they do not cover footer */}
-                    <div>
-                        <img className={style.carouselImg} src={alcodeHome}/>
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={navbar}/>
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={oauth}/>
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={alcodeSelect} />
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={zoom} />
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={zoomIn} />
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={campDetail} />
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={campImage} />
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={favorites} />
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={alcodeMap} />
-                    </div>
-                    <div>
-                        <img className={style.carouselImg} src={alcodeCampground} />
-                    </div>
-                </Carousel>
-            </div>
-            <div className={style.spendingDiv}>
-                <section className={style.linkContainer}>
-                    <div>
-                        <a className={style.projectLink} href="https://where-is-my-money-tracker.netlify.app/">
-                            <h3 className={style.projectName}>Spending Tracker</h3>
-                        </a>
-                    </div>
-                    <div className={style.githubLink}>
-                        <a className={style.githubATag} href="https://github.com/Where-Is-My-Money-Tracker">
-                            <img className={style.github} src={github} alt='github link' />
-                        </a>
-                    </div>
-                </section>
-                <Carousel autoplay={true} autoplayInterval={6000}>
-                    <img className={style.spendingImg} src={signin} alt="signin" />
-                    <img className={style.spendingImg} src={home} alt="home" />
-                    <img className={style.spendingImg} src={chart} alt="chart" />
-                    <img className={style.spendingImg} src={subcategory} alt="subcategory" />
-                    <img className={style.spendingImg} src={menu} alt="menu" />
-                    <img className={style.spendingImg} src={newPurchase} alt="newPurchase" />
-                    <img className={style.spendingImg} src={addRecurring} alt="addRecurring" />
-                    <img className={style.spendingImg} src={stopRecurring} alt="stopRecurring" />
-                    <img className={style.spendingImg} src={deletePurchase} alt="deletePurchase" />
-                </Carousel>
-            </div>
-            <div className={style.solaramaDiv}>
-                <section className={style.linkContainer}>
-                    <div>
-                        <a className={style.projectLink} href="https://tannermeck.github.io/project-week-solar-trivia/">
-                            <h3 className={style.solaramaTitle}>Solarama</h3>
-                        </a>
-                    </div>
-                    <div className={style.githubLink}>
-                        <a className={style.githubATag} href="https://github.com/tannermeck/project-week-solar-trivia">
-                            <img className={style.github} src={whiteGithub} alt='github link' />
-                        </a>
-                    </div>
-                </section>
-                
-                <Carousel autoplay={true} autoplayInterval={6000}>
-                    <img className={style.solaramaImg} src={solarHome} alt="home page" />
-                    <img className={style.solaramaImg} src={planets} alt="planet links" />
-                    <img className={style.solaramaImg} src={trivia} alt="trivia question" />
-                    <img className={style.solaramaImg} src={triviaSubmit} alt="submit answer" />
-                    <img className={style.solaramaImg} src={completed} alt="completed levels" />
-                    <img className={style.solaramaImg} src={leaderboard} alt="leaderboard" />
-                </Carousel>
-            </div>
+      <h1 data-text="{ Tanner }" className={style.loader}>{`{ Tanner }`}</h1>
+    );
+  return (
+    <section className={style.projectsContainer}>
+      <div className={style.titleContainer}>
+        <h1 className={style.title}>{`{ PROJECTS }`}</h1>
+      </div>
+      <div className={style.carouselDiv}>
+        <section className={style.linkContainer}>
+          <div>
+            <a
+              className={style.projectLink}
+              href="https://alcode-campgrounds.netlify.app"
+            >
+              <h3 className={style.projectName}>Alcode-Campgrounds</h3>
+            </a>
+          </div>
+          <div className={style.githubLink}>
+            <a
+              className={style.githubATag}
+              href="https://github.com/Alcode-Campgrounds"
+            >
+              <img className={style.github} src={github} alt="github link" />
+            </a>
+          </div>
         </section>
-    )
+        <Carousel width="100%" autoplay={true} autoplayInterval={6000}>
+          {/* renderBottomCenterControls={({position: null})} */}
+          {/* need to style bottom controls so they do not cover footer */}
+          <div>
+            <img className={style.carouselImg} src={alcodeHome} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={navbar} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={oauth} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={alcodeSelect} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={zoom} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={zoomIn} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={campDetail} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={campImage} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={favorites} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={alcodeMap} />
+          </div>
+          <div>
+            <img className={style.carouselImg} src={alcodeCampground} />
+          </div>
+        </Carousel>
+      </div>
+      <div className={style.spendingDiv}>
+        <section className={style.linkContainer}>
+          <div>
+            <a
+              className={style.projectLink}
+              href="https://where-is-my-money-tracker.netlify.app/"
+            >
+              <h3 className={style.projectName}>Spending Tracker</h3>
+            </a>
+          </div>
+          <div className={style.githubLink}>
+            <a
+              className={style.githubATag}
+              href="https://github.com/Where-Is-My-Money-Tracker"
+            >
+              <img className={style.github} src={github} alt="github link" />
+            </a>
+          </div>
+        </section>
+        <Carousel autoplay={true} autoplayInterval={6000}>
+          <img className={style.spendingImg} src={signin} alt="signin" />
+          <img className={style.spendingImg} src={home} alt="home" />
+          <img className={style.spendingImg} src={chart} alt="chart" />
+          <img
+            className={style.spendingImg}
+            src={subcategory}
+            alt="subcategory"
+          />
+          <img className={style.spendingImg} src={menu} alt="menu" />
+          <img
+            className={style.spendingImg}
+            src={newPurchase}
+            alt="newPurchase"
+          />
+          <img
+            className={style.spendingImg}
+            src={addRecurring}
+            alt="addRecurring"
+          />
+          <img
+            className={style.spendingImg}
+            src={stopRecurring}
+            alt="stopRecurring"
+          />
+          <img
+            className={style.spendingImg}
+            src={deletePurchase}
+            alt="deletePurchase"
+          />
+        </Carousel>
+      </div>
+      <div className={style.solaramaDiv}>
+        <section className={style.linkContainer}>
+          <div>
+            <a
+              className={style.projectLink}
+              href="https://tannermeck.github.io/project-week-solar-trivia/"
+            >
+              <h3 className={style.solaramaTitle}>Solarama</h3>
+            </a>
+          </div>
+          <div className={style.githubLink}>
+            <a
+              className={style.githubATag}
+              href="https://github.com/tannermeck/project-week-solar-trivia"
+            >
+              <img
+                className={style.github}
+                src={whiteGithub}
+                alt="github link"
+              />
+            </a>
+          </div>
+        </section>
+
+        <Carousel autoplay={true} autoplayInterval={6000}>
+          <img className={style.solaramaImg} src={solarHome} alt="home page" />
+          <img className={style.solaramaImg} src={planets} alt="planet links" />
+          <img
+            className={style.solaramaImg}
+            src={trivia}
+            alt="trivia question"
+          />
+          <img
+            className={style.solaramaImg}
+            src={triviaSubmit}
+            alt="submit answer"
+          />
+          <img
+            className={style.solaramaImg}
+            src={completed}
+            alt="completed levels"
+          />
+          <img
+            className={style.solaramaImg}
+            src={leaderboard}
+            alt="leaderboard"
+          />
+        </Carousel>
+      </div>
+    </section>
+  );
 }
