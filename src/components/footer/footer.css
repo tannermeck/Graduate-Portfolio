@@ -1,28 +1,28 @@
 .footer {
-    background-color: #BAC1B8;
-    text-align: center;
-    padding-top: 60px;
-    position:static;
-    bottom: 0;
-    width: 100%;
+  background-image: linear-gradient(0deg, #bac1b8, black);
+  text-align: center;
+  padding-top: 60px;
+  position: static;
+  bottom: 0;
+  width: 100%;
 }
 .footerLinks {
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .footerGithubIcon {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 .footerEmailImage {
-    padding-right: 3px;
-    margin-top: 3px;
+  padding-right: 3px;
+  margin-top: 3px;
 }
-@media (max-width: 490px){
-    .footer {
-        /* width: 100vh; */
-        width: 100%;
-        padding-right: 20px;
-    }
+@media (max-width: 490px) {
+  .footer {
+    /* width: 100vh; */
+    width: 100%;
+    padding-right: 20px;
+  }
 }

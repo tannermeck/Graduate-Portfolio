@@ -1,5 +1,5 @@
 .homeContainer {
-  background-color: #bac1b8;
+  /* background-color: #bac1b8; */
   width: 100vw;
   font-family: sans-serif;
   background-image: url('../../assets/background-profile.png');
@@ -16,6 +16,7 @@
 }
 .homeName {
   padding: 20px;
+  color: white;
 }
 .links {
   display: flex;
@@ -35,10 +36,12 @@ a img {
 .title {
   margin-top: 0px;
   font-weight: bolder;
+  color: white;
 }
 .location {
   font-weight: bolder;
   margin-top: 10px;
+  color: white;
 }
 .aboutContainer {
   width: 85%;
